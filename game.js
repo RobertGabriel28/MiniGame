@@ -52,7 +52,7 @@ function startTimer() {
         updateTimerDisplay();
         if (timeLeft <= 0) {
             clearInterval(timer);
-            alert('Timpul a expirat! Încearcă din nou.');
+            alert('S-a dus timpul dar poti faci iar');
             resetGame();
         }
     }, 1000);
@@ -126,7 +126,7 @@ function checkWord() {
         updateScoreDisplay();
         proceedToNextWord();
     } else {
-        alert("Cuvântul este greșit! Încearcă din nou.");
+        alert("E gresit cuvantul dar poti face iar");
         resetLetters();
     }
 }
